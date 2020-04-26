@@ -1,4 +1,4 @@
-<h1 align="center"> Error Terror</h1>
+<h1 align="center"> Error's Terror</h1>
 <h3 align="center">A modular Telegram userbot running on Python 3.8+ with an sqlalchemy database.</h3>
 <h4 align="center">Based on RaphielGang's <a href="https://github.com/RaphielGang/Telegram-UserBot">Paperplane</a> Telegram userbot...</h4>
 <h4 align="center">...or rather, it's modified OUB enriched with kangness</h4>
