@@ -18,19 +18,19 @@ from userbot.events import register
 async def magisk(request):
     """ magisk latest releases """
     magisk_dict = {
-        "⦁Stable":
+        "⦁ 𝗦𝘁𝗮𝗯𝗹𝗲":
         "https://raw.githubusercontent.com/topjohnwu/magisk_files/master/stable.json",
 "\n"
-        "⦁Beta":
+        "⦁ 𝗕𝗲𝘁𝗮":
         "https://raw.githubusercontent.com/topjohnwu/magisk_files/master/beta.json",
 "\n"
-        "⦁Canary (Release)":
+        "⦁ 𝗖𝗮𝗻𝗮𝗿𝘆 (𝗥𝗲𝗹𝗲𝗮𝘀𝗲)":
         "https://raw.githubusercontent.com/topjohnwu/magisk_files/canary/release.json",
 "\n"
-        "⦁Canary (Debug)":
+        "⦁ 𝗖𝗮𝗻𝗮𝗿𝘆 (𝗗𝗲𝗯𝘂𝗴)":
         "https://raw.githubusercontent.com/topjohnwu/magisk_files/canary/debug.json"
     }
-    releases = 'Latest Magisk Releases:\n'
+    releases = '𝐋𝐚𝐭𝐞𝐬𝐭 𝐌𝐚𝐠𝐢𝐬𝐤 𝐑𝐞𝐥𝐞𝐚𝐬𝐞𝐬:\n'
     for name, release_url in magisk_dict.items():
         data = get(release_url).json()
         releases += f'{name}: [ZIP v{data["magisk"]["version"]}]({data["magisk"]["link"]}) | ' \
