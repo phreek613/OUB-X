@@ -123,8 +123,8 @@ async def pipcheck(pip):
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
     await alive.edit(
-          "`I'M AT YOUR SERVICE HAREM KING` \n"
-        f"`-----------------------------------` \n"
+          "I'M AT YOUR SERVICE HAREM KING \n"
+        f"----------------------------------- \n"
          "`⣼⣯⠄⣸⣠⣶⣶⣦⣾⠄⠄⠄⠄⡀⠄⢀⣿⣿⠄⠄⠄⢸⡇` \n"
          "`⠿⠿⠶⠿⢿⣿⣿⣿⣿⣦⣤⣄⢀⡅⢠⣾⣛⡉⠄⠄⠄⠸⢀` \n"
          "`⣴⣶⣶⡀⠄⠄⠙⢿⣿⣿⣿⣿⣿⣴⣿⣿⣿⢃⣤⣄⣀⣥⣿` \n"
@@ -140,13 +140,13 @@ async def amireallyalive(alive):
          "`⠛⢿⣿⣿⣿⠁⠞⢿⣿⣿⡄⢿⣿⡇⣸⣿⣿⠿⠛⠁⠄⠄⠄` \n"
          "`⠄⠄⠉⠻⣿⣿⣾⣦⡙⠻⣷⣾⣿⠃⠿⠋⠁⠄⠄⠄⠄⠄⢀` \n"
          "`⣮⣥⣒⠲⢮⣝⡿⣿⣿⡆⣿⡿⠃⠄⠄⠄⠄⠄⠄⠄⣠⣴⣿` \n"
-        f"`-----------------------------------` \n"
+        f"----------------------------------- \n"
                      f"🤖 `Telethon version`: {version.__version__} \n"
                      f"🐍 `Python`: {python_version()} \n"
-         f"`Owner` - @DeletedUser420 \n"
-                     f"`-----------------------------------`\n"
-                     f"`User`: {DEFAULTUSER} \n"   
-        f"`Repo`- https://github.com/code-rgb/OUB-X\n")
+         f"⦁Owner - @DeletedUser420 \n"
+                     f"-----------------------------------\n"
+                     f"User: {DEFAULTUSER} \n"   
+        f"⦁Repo- https://github.com/code-rgb/OUB-X\n")
         
         
                    
