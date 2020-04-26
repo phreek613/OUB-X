@@ -6,7 +6,7 @@
 <p align="center">&nbsp;</p>
 <h2 align="center">How To Host</h2>
 <h5 align="center">The easiest way to deploy this derpfest! is click on the image below</h5>
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/code-rgb/OUB-X/tree/sql-extended"> <img src="https://telegra.ph/file/843716e2e694b3505cf9e.jpg” alt="Deploy to Heroku" /></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/code-rgb/OUB-X/tree/sql-extended"><img src="https://telegra.ph/file/843716e2e694b3505cf9e.jpg" alt="Press to Takeoff" height="42" width="42"></a></p>
 <p align="center">&nbsp;</p>
 <h2 align="center">Credits</h2>
 <p align="center">Huge thanks to <a href="https://github.com/code-rgb/OUB-X/graphs/contributors">everyone</a> who have helped make this userbot awesome!!</p>
