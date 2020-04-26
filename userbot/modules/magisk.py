@@ -30,7 +30,7 @@ async def magisk(request):
         "⦁ 𝗖𝗮𝗻𝗮𝗿𝘆 (𝗗𝗲𝗯𝘂𝗴)":
         "https://raw.githubusercontent.com/topjohnwu/magisk_files/canary/debug.json"
     }
-    releases = '𝐋𝐚𝐭𝐞𝐬𝐭 𝐌𝐚𝐠𝐢𝐬𝐤 𝐑𝐞𝐥𝐞𝐚𝐬𝐞𝐬:\n'
+    releases = '𝗟𝗮𝘁𝗲𝘀𝘁 𝗠𝗮𝗴𝗶𝘀𝗸 𝗥𝗲𝗹𝗲𝗮𝘀𝗲:\n' "\n"
     for name, release_url in magisk_dict.items():
         data = get(release_url).json()
         releases += f'{name}: [ZIP v{data["magisk"]["version"]}]({data["magisk"]["link"]}) | ' \
