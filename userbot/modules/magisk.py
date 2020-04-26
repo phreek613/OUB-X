@@ -12,22 +12,19 @@ from bs4 import BeautifulSoup
 from userbot import CMD_HELP
 from userbot.events import register
 
-GITHUB = 'https://github.com'
-DEVICES_DATA = 'https://raw.githubusercontent.com/androidtrackers/' \
-               'certified-android-devices/master/devices.json'
 
 
 @register(outgoing=True, pattern="^.magisk$")
 async def magisk(request):
     """ magisk latest releases """
     magisk_dict = {
-        "● Stable":
-        "https://raw.githubusercontent.com/topjohnwu/magisk_files/master/stable.json \n",
-        "● Beta":
-        "https://raw.githubusercontent.com/topjohnwu/magisk_files/master/beta.json \n",
-        "● Canary (Release)":
-        "https://raw.githubusercontent.com/topjohnwu/magisk_files/canary/release.json \n",
-        "● Canary (Debug)":
+        "⦁Stable":
+        "https://raw.githubusercontent.com/topjohnwu/magisk_files/master/stable.json",
+        \n"⦁Beta":
+        "https://raw.githubusercontent.com/topjohnwu/magisk_files/master/beta.json",
+        \n"⦁Canary (Release)":
+        "https://raw.githubusercontent.com/topjohnwu/magisk_files/canary/release.json",
+        \n"⦁Canary (Debug)":
         "https://raw.githubusercontent.com/topjohnwu/magisk_files/canary/debug.json"
     }
     releases = 'Latest Magisk Releases:\n'
@@ -37,6 +34,36 @@ async def magisk(request):
                     f'[APK v{data["app"]["version"]}]({data["app"]["link"]}) | ' \
                     f'[Uninstaller]({data["uninstaller"]["link"]})\n'
     await request.edit(releases)
+
+
+
+@register(outgoing=True, pattern=r"^.twrp(?: |$)(\S*)")
+async def twrp(request):
+    """ get android device twrp """
+    textx = await request.get_reply_message()
+    device = request.pattern_match.group(1)
+    if device:
+        pass
+    elif textx:
+        device = textx.text.split(' ')[0]
+    else:
+        await request.edit("`Usage: .twrp <codename>`")
+        return
+    url = get(f'https://dl.twrp.me/{device}/')
+    if url.status_code == 404:
+        reply = f"`Couldn't find twrp downloads for {device}!`\n"
+        await request.edit(reply)
+        return
+    page = BeautifulSoup(url.content, 'lxml')
+    download = page.find('table').find('tr').find('a')
+    dl_link = f"https://dl.twrp.me{download['href']}"
+    dl_file = download.text
+    size = page.find("span", {"class": "filesize"}).text
+    date = page.find("em").text.strip()
+    reply = f'**Latest TWRP for {device}:**\n' \
+        f'[{dl_file}]({dl_link}) - __{size}__\n' \
+        f'**Updated:** __{date}__\n'
+    await request.edit(reply)
 
 
 
