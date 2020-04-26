@@ -19,12 +19,12 @@ async def magisk(request):
     """ magisk latest releases """
     magisk_dict = {
         "⦁Stable":
-        "https://raw.githubusercontent.com/topjohnwu/magisk_files/master/stable.json",
-        \n"⦁Beta":
-        "https://raw.githubusercontent.com/topjohnwu/magisk_files/master/beta.json",
-        \n"⦁Canary (Release)":
-        "https://raw.githubusercontent.com/topjohnwu/magisk_files/canary/release.json",
-        \n"⦁Canary (Debug)":
+        "https://raw.githubusercontent.com/topjohnwu/magisk_files/master/stable.json",”\n”
+        "⦁Beta":
+        "https://raw.githubusercontent.com/topjohnwu/magisk_files/master/beta.json",”\n”
+        "⦁Canary (Release)":
+        "https://raw.githubusercontent.com/topjohnwu/magisk_files/canary/release.json",”\n”
+        "⦁Canary (Debug)":
         "https://raw.githubusercontent.com/topjohnwu/magisk_files/canary/debug.json"
     }
     releases = 'Latest Magisk Releases:\n'
