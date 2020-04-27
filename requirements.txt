@@ -58,3 +58,4 @@ jotquote
 csvfaker
 pymongo
 PyLyrics
+wget
