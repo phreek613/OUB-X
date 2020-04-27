@@ -29,7 +29,7 @@ async def download_file(url,filename):
 			handle.write(chunk)
 	handle.close()   
 
-@bot.on(events.NewMessage(pattern=r"\.anime", outgoing=True))
+@bot.on(events.NewMessage(pattern=r"\.downanime", outgoing=True))
 async def anime_download(event):
 	urls = []
 	url_links = []
