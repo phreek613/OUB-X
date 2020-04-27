@@ -3,9 +3,11 @@ import datetime
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.account import UpdateNotifySettingsRequest
-from userbot.util import admin_cmd
+#rom userbot.utils import admin_cmd
 from userbot import bot
-@bot.on(admin_cmd("au ?(.*)"))
+from userbot.events import register
+
+@register(outgoing=True, pattern="^.au(?: |$)(.*)") 
 
 async def _(event):
     if event.fwd_from:
