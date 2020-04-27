@@ -55,6 +55,7 @@ RUN apk add --no-cache=true --update \
     chromium \
     chromium-chromedriver \
     zlib-dev \
+    w3m \
     jpeg 
     #
 
